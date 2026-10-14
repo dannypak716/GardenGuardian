@@ -149,13 +149,13 @@ iframe {
 }
 
 /*for sign up form*/
-.signup-form {
+.signupForm {
   width: 40%;
   max-width: 500px;
   margin: 20px auto 60px auto;
 }
 
-.signup-form label {
+.signupForm label {
   display: block;
   color: #006100;
   font-size: 18px;
@@ -163,14 +163,14 @@ iframe {
   margin-bottom: 5px;
 }
 
-.signup-form input, .signup-form select {
+.signupForm input, .signupForm select, .signupForm button {
   width: 100%;
   padding: 10px;
   box-sizing: border-box;
   border: 1px solid #006100;
 }
 
-.signup-form input[type="submit"] {
+.signupForm button {
   margin-top: 20px;
   background-color: #006100;
   color: white;
@@ -178,13 +178,13 @@ iframe {
   cursor: pointer;
 }
 
-.signup-form input[type="submit"]:hover {
+.signupForm button:hover {
   background-color: #003d00;
 }
 
 /* responsive design */
 @media (max-width: 768px) {
-  .signup-form {
+  .signupForm {
     width: 80%;
   }
 
