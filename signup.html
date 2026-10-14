@@ -5,6 +5,7 @@
       <title>Garden Guardian</title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <link rel="stylesheet" href="style.css">
+      <script src="script.js" defer></script>
    </head>
 
    <body>
@@ -25,25 +26,30 @@
       <main>
          <h3>Sign Up</h3>
 
-         <form class="signup-form">
+         <form class="signupForm" id="signupForm">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
+
             <label for="username">Username:</label>
-            <input type="text" id="username" name="username">
+            <input type="text" id="username" name="username" required>
 
             <label for="password">Password:</label>
-            <input type="password" id="password" name="password">
+            <input type="password" id="password" name="password" required>
 
             <label for="email">Email:</label>
-            <input type="email" id="email" name="email">
+            <input type="email" id="email" name="email" required>
 
-            <label for="hear-about-us">How did you hear about us?</label>
-            <select id="hear-about-us" name="hear-about-us">
+            <label for="hearAboutUs">How did you hear about us?</label>
+            <select id="hearAboutUs" name="hearAboutUs" required>
                <option value="referral">Referral</option>
-               <option value="social-media">Social Media</option>
+               <option value="socialmedia">Social Media</option>
                <option value="billboard">Billboard</option>
                <option value="van-truck">Van/Truck</option>
             </select>
 
-            <input type="submit" value="Sign Up">
+            <button type="submit" id="signupButton">Sign Up</button>
+
+            <p id="signupMessage"></p>
          </form>
       </main>
 
