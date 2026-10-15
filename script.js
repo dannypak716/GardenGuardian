@@ -1,4 +1,5 @@
-console.log("JS is connected!")
+console.log("JS is connected!")   // check to make sure script.js is being referenced properly in signup.html
+                                  // it does work in chrome F12 and prints "JS is connected!"
 
 const customers = [];
 
@@ -10,14 +11,14 @@ signupButton.addEventListener("click", function (event) {
    event.preventDefault();
 
    if (!signupForm.reportValidity()) {
-      alert("Missing fields!");
+      alert("Missing fields!");   // check to make sure all the fields are completed by the user and throws an alert in the browser if not
       return;
    }
 
    const customer = {
       name: document.getElementById("name").value,
       username: document.getElementById("username").value,
-      password: document.getElementById("password").value,
+      password: document.getElementById("password").value,   // probably not good to store this here since it'll show the password in the console log
       email: document.getElementById("email").value,
       heardAboutUs: document.getElementById("hearAboutUs").value
    };
